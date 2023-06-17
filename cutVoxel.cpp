@@ -1,6 +1,6 @@
-#include "putVoxel.h"
+#include "cutVoxel.h"
 
-PutVoxel::PutVoxel(int xv, int yv, int zv, float r, float g, float b, float a)
+CutVoxel::CutVoxel(int xv, int yv, int zv, float r, float g, float b, float a)
 {
     this->x=xv;
     this->y=yv;
@@ -11,7 +11,7 @@ PutVoxel::PutVoxel(int xv, int yv, int zv, float r, float g, float b, float a)
     this->a=a;
 }
 
-void PutVoxel::draw(Sculptor &s)
+void CutVoxel::draw(Sculptor &s)
 {
     s.setColor(r, g, b, a);
     s.putVoxel(x, y, z);
