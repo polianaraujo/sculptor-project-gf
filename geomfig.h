@@ -8,7 +8,6 @@ class GeomFig
 protected:
     float r, g, b, a;
 public:
-    GeomFig();
     virtual ~GeomFig();
     virtual void draw(Sculptor &s)=0;
 
