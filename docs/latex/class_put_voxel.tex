@@ -1,0 +1,75 @@
+\doxysection{Put\+Voxel Class Reference}
+\hypertarget{class_put_voxel}{}\label{class_put_voxel}\index{PutVoxel@{PutVoxel}}
+
+
+A class \doxylink{class_put_voxel}{Put\+Voxel} é uma classe de Figura\+Geometrica.  
+
+
+
+
+{\ttfamily \#include $<$put\+Voxel.\+h$>$}
+
+Inheritance diagram for Put\+Voxel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_put_voxel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_put_voxel_a25b6fa21f88c3b3c6b619d14fa405e88}{Put\+Voxel}} (int xv, int yv, int zv, float r, float g, float b, float a)
+\item 
+void \mbox{\hyperlink{class_put_voxel_a5bb3d4986a185b22ab050a41c7bb0017}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_geom_fig_aa7f09bff0d514a2f3befa9be387de4e6}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_geom_fig}{Geom\+Fig}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries r}
+\item 
+float {\bfseries g}
+\item 
+float {\bfseries b}
+\item 
+float {\bfseries a}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class \doxylink{class_put_voxel}{Put\+Voxel} é uma classe de Figura\+Geometrica. 
+
+ou seja, é herdeira de Figura\+Geometrica. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_put_voxel_a25b6fa21f88c3b3c6b619d14fa405e88}\label{class_put_voxel_a25b6fa21f88c3b3c6b619d14fa405e88} 
+\index{PutVoxel@{PutVoxel}!PutVoxel@{PutVoxel}}
+\index{PutVoxel@{PutVoxel}!PutVoxel@{PutVoxel}}
+\doxysubsubsection{\texorpdfstring{PutVoxel()}{PutVoxel()}}
+{\footnotesize\ttfamily Put\+Voxel\+::\+Put\+Voxel (\begin{DoxyParamCaption}\item[{int}]{xv,  }\item[{int}]{yv,  }\item[{int}]{zv,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+função para colocar voxe.
+
+Variáveis para a profundidade xv (coordenada x) (xv = x do voxel), altura yv (coordenada y), largura zv (coordenada z), r para o tom de vermelho, g para o tom de verde, b para o tom de azul e a para a transparência alpha. As cores misturadas podem formar outras cores. Cada variável r, g, b e a podem ir de 0.\+0 a 1.\+0 ou de 0 a 255. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_put_voxel_a5bb3d4986a185b22ab050a41c7bb0017}\label{class_put_voxel_a5bb3d4986a185b22ab050a41c7bb0017} 
+\index{PutVoxel@{PutVoxel}!draw@{draw}}
+\index{draw@{draw}!PutVoxel@{PutVoxel}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Voxel\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sculptor}{Sculptor}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_geom_fig}{Geom\+Fig}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+put\+Voxel.\+h\item 
+put\+Voxel.\+cpp\end{DoxyCompactItemize}

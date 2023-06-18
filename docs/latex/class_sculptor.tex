@@ -1,0 +1,243 @@
+\doxysection{Sculptor Class Reference}
+\hypertarget{class_sculptor}{}\label{class_sculptor}\index{Sculptor@{Sculptor}}
+
+
+Aqui é definida a classe \doxylink{class_sculptor}{Sculptor}.  
+
+
+
+
+{\ttfamily \#include $<$sculptor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433}{Sculptor}} (int \+\_\+nx, int \+\_\+ny, int \+\_\+nz)
+\begin{DoxyCompactList}\small\item\em Função \doxylink{class_sculptor}{Sculptor} é o construtor da classe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}{\texorpdfstring{$\sim$}{\string~}\+Sculptor}} ()
+\begin{DoxyCompactList}\small\item\em Função \texorpdfstring{$\sim$}{\string~}\+Sculptor é o destrutor da classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sculptor_a4351c930a07887e96d4fdbf251a7867e}{set\+Color}} (float r, float g, float b, float a)
+\begin{DoxyCompactList}\small\item\em Função set\+Color é para definir as cores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}{put\+Voxel}} (int x, int y, int z)
+\item 
+void \mbox{\hyperlink{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}{cut\+Voxel}} (int x, int y, int z)
+\item 
+void \mbox{\hyperlink{class_sculptor_a311ad7a0fb83fc67ac1f378be8e99fe1}{put\+Box}} (int x0, int x1, int y0, int y1, int z0, int z1)
+\item 
+void \mbox{\hyperlink{class_sculptor_aa84a1b12b09e9e103fc8d78f8d1bc00f}{cut\+Box}} (int x0, int x1, int y0, int y1, int z0, int z1)
+\item 
+void \mbox{\hyperlink{class_sculptor_a794a2b6ee8fc8098fd6150cb46101fc6}{put\+Sphere}} (int xcenter, int ycenter, int zcenter, int radius)
+\item 
+void \mbox{\hyperlink{class_sculptor_a67ab8c0ba5116adb8af1d01ad373ac15}{cut\+Sphere}} (int xcenter, int ycenter, int zcenter, int radius)
+\item 
+void \mbox{\hyperlink{class_sculptor_a093615b0c2b9b3a17a56300b9b939f39}{put\+Ellipsoid}} (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
+\item 
+void \mbox{\hyperlink{class_sculptor_a18d2922c111c4c13653ee07d878151ad}{cut\+Ellipsoid}} (int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
+\item 
+void \mbox{\hyperlink{class_sculptor_a58cb72d22001a5034f15383ca983830c}{write\+OFF}} (const char \texorpdfstring{$\ast$}{*}filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Aqui é definida a classe \doxylink{class_sculptor}{Sculptor}. 
+
+É nela que serão declaradas as funções necessárias das formas que servirão para desenhar a escultura desejada. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433}\label{class_sculptor_a014e3ef5517bf0e9d9e14486b6ac6433} 
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\index{Sculptor@{Sculptor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{Sculptor()}{Sculptor()}}
+{\footnotesize\ttfamily Sculptor\+::\+Sculptor (\begin{DoxyParamCaption}\item[{int}]{\+\_\+nx,  }\item[{int}]{\+\_\+ny,  }\item[{int}]{\+\_\+nz }\end{DoxyParamCaption})}
+
+
+
+Função \doxylink{class_sculptor}{Sculptor} é o construtor da classe. 
+
+Ela tem como parâmentros nx linhas, ny colunas e nz planos da matriz. 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+nx} & linhas \\
+\hline
+{\em \+\_\+ny} & colunas \\
+\hline
+{\em \+\_\+nz} & planos\\
+\hline
+\end{DoxyParams}
+Com esses parâmetros ela vai definir a dimensão necessária para alocar a matriz desejada. \Hypertarget{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}\label{class_sculptor_a8f159bf97458326f16d2e238e11be7ff} 
+\index{Sculptor@{Sculptor}!````~Sculptor@{\texorpdfstring{$\sim$}{\string~}Sculptor}}
+\index{````~Sculptor@{\texorpdfstring{$\sim$}{\string~}Sculptor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Sculptor()}{\string~Sculptor()}}
+{\footnotesize\ttfamily Sculptor\+::\texorpdfstring{$\sim$}{\string~}\+Sculptor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função \texorpdfstring{$\sim$}{\string~}\+Sculptor é o destrutor da classe. 
+
+Ela serve para desalocar a matriz. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sculptor_aa84a1b12b09e9e103fc8d78f8d1bc00f}\label{class_sculptor_aa84a1b12b09e9e103fc8d78f8d1bc00f} 
+\index{Sculptor@{Sculptor}!cutBox@{cutBox}}
+\index{cutBox@{cutBox}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{cutBox()}{cutBox()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Box (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{x1,  }\item[{int}]{y0,  }\item[{int}]{y1,  }\item[{int}]{z0,  }\item[{int}]{z1 }\end{DoxyParamCaption})}
+
+Serve para cortar uma caixa sólida de voxels com dimensões x\mbox{[}x0,x1\mbox{]}, y\mbox{[}y0,y1\mbox{]} e z\mbox{[}z0,z1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em x0,x1} & aresta de tamanho x1-\/x0 \\
+\hline
+{\em y0,y1} & aresta de tamanho y1-\/y0 \\
+\hline
+{\em z0,z1} & aresta de tamanho z1-\/z0 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_a18d2922c111c4c13653ee07d878151ad}\label{class_sculptor_a18d2922c111c4c13653ee07d878151ad} 
+\index{Sculptor@{Sculptor}!cutEllipsoid@{cutEllipsoid}}
+\index{cutEllipsoid@{cutEllipsoid}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{cutEllipsoid()}{cutEllipsoid()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Ellipsoid (\begin{DoxyParamCaption}\item[{int}]{xcenter,  }\item[{int}]{ycenter,  }\item[{int}]{zcenter,  }\item[{int}]{rx,  }\item[{int}]{ry,  }\item[{int}]{rz }\end{DoxyParamCaption})}
+
+Serve remover uma elipsóide sólida de voxels levando em conta a equação da esfera com dimensões x\mbox{[}x0,x1\mbox{]}, y\mbox{[}y0,y1\mbox{]} e z\mbox{[}z0,z1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em xcenter} & posição x do centro da elipsóide \\
+\hline
+{\em rx} & é o raio do elipsóide no eixo x \\
+\hline
+{\em ycenter} & posição y do centro da elipsóide \\
+\hline
+{\em ry} & é o raio do elipsóide no eixo y \\
+\hline
+{\em zcenter} & posição z do centro da elipsóide \\
+\hline
+{\em rz} & é o raio do elipsóide no eixo z \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_a67ab8c0ba5116adb8af1d01ad373ac15}\label{class_sculptor_a67ab8c0ba5116adb8af1d01ad373ac15} 
+\index{Sculptor@{Sculptor}!cutSphere@{cutSphere}}
+\index{cutSphere@{cutSphere}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{cutSphere()}{cutSphere()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Sphere (\begin{DoxyParamCaption}\item[{int}]{xcenter,  }\item[{int}]{ycenter,  }\item[{int}]{zcenter,  }\item[{int}]{radius }\end{DoxyParamCaption})}
+
+Serve remover uma esfera sólida de voxels levando em conta a equação da esfera com dimensões x\mbox{[}x0,x1\mbox{]}, y\mbox{[}y0,y1\mbox{]} e z\mbox{[}z0,z1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em xcenter} & posição x do centro da esfera \\
+\hline
+{\em ycenter} & posição y do centro da esfera \\
+\hline
+{\em zcenter} & posição z do centro da esfera \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}\label{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c} 
+\index{Sculptor@{Sculptor}!cutVoxel@{cutVoxel}}
+\index{cutVoxel@{cutVoxel}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{cutVoxel()}{cutVoxel()}}
+{\footnotesize\ttfamily void Sculptor\+::cut\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+Serve para remover um voxel de dimensão 1x1x1 na posição x,y,z (fazendo show = false). 
+\begin{DoxyParams}{Parameters}
+{\em x} & posição x \\
+\hline
+{\em y} & posição y \\
+\hline
+{\em z} & posição z \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_a311ad7a0fb83fc67ac1f378be8e99fe1}\label{class_sculptor_a311ad7a0fb83fc67ac1f378be8e99fe1} 
+\index{Sculptor@{Sculptor}!putBox@{putBox}}
+\index{putBox@{putBox}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{putBox()}{putBox()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Box (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{x1,  }\item[{int}]{y0,  }\item[{int}]{y1,  }\item[{int}]{z0,  }\item[{int}]{z1 }\end{DoxyParamCaption})}
+
+Serve inserir uma caixa sólida de voxels com dimensões x\mbox{[}x0,x1\mbox{]}, y\mbox{[}y0,y1\mbox{]} e z\mbox{[}z0,z1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em x0,x1} & aresta de tamanho x1-\/x0 \\
+\hline
+{\em y0,y1} & aresta de tamanho y1-\/y0 \\
+\hline
+{\em z0,z1} & aresta de tamanho z1-\/z0 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_a093615b0c2b9b3a17a56300b9b939f39}\label{class_sculptor_a093615b0c2b9b3a17a56300b9b939f39} 
+\index{Sculptor@{Sculptor}!putEllipsoid@{putEllipsoid}}
+\index{putEllipsoid@{putEllipsoid}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{putEllipsoid()}{putEllipsoid()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Ellipsoid (\begin{DoxyParamCaption}\item[{int}]{xcenter,  }\item[{int}]{ycenter,  }\item[{int}]{zcenter,  }\item[{int}]{rx,  }\item[{int}]{ry,  }\item[{int}]{rz }\end{DoxyParamCaption})}
+
+Serve inserir uma elipsóide sólida de voxels levando em conta a equação da esfera com dimensões x\mbox{[}x0,x1\mbox{]}, y\mbox{[}y0,y1\mbox{]} e z\mbox{[}z0,z1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em xcenter} & posição x do centro da elipsóide \\
+\hline
+{\em rx} & é o raio do elipsóide no eixo x \\
+\hline
+{\em ycenter} & posição y do centro da elipsóide \\
+\hline
+{\em ry} & é o raio do elipsóide no eixo y \\
+\hline
+{\em zcenter} & posição z do centro da elipsóide \\
+\hline
+{\em rz} & é o raio do elipsóide no eixo z \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_a794a2b6ee8fc8098fd6150cb46101fc6}\label{class_sculptor_a794a2b6ee8fc8098fd6150cb46101fc6} 
+\index{Sculptor@{Sculptor}!putSphere@{putSphere}}
+\index{putSphere@{putSphere}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{putSphere()}{putSphere()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Sphere (\begin{DoxyParamCaption}\item[{int}]{xcenter,  }\item[{int}]{ycenter,  }\item[{int}]{zcenter,  }\item[{int}]{radius }\end{DoxyParamCaption})}
+
+Serve inserir uma esfera sólida de voxels levando em conta a equação da esfera com dimensões x\mbox{[}x0,x1\mbox{]}, y\mbox{[}y0,y1\mbox{]} e z\mbox{[}z0,z1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em xcenter} & posição x do centro da esfera \\
+\hline
+{\em ycenter} & posição y do centro da esfera \\
+\hline
+{\em zcenter} & posição z do centro da esfera \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}\label{class_sculptor_a4bdea3048b419d58e93074060eaa7b52} 
+\index{Sculptor@{Sculptor}!putVoxel@{putVoxel}}
+\index{putVoxel@{putVoxel}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{putVoxel()}{putVoxel()}}
+{\footnotesize\ttfamily void Sculptor\+::put\+Voxel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
+
+Insere um voxel de dimensão 1x1x1 na posição x,y,z (fazendo show = true). 
+\begin{DoxyParams}{Parameters}
+{\em x} & posição x \\
+\hline
+{\em y} & posição y \\
+\hline
+{\em z} & posição z \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_a4351c930a07887e96d4fdbf251a7867e}\label{class_sculptor_a4351c930a07887e96d4fdbf251a7867e} 
+\index{Sculptor@{Sculptor}!setColor@{setColor}}
+\index{setColor@{setColor}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily void Sculptor\+::set\+Color (\begin{DoxyParamCaption}\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+
+
+Função set\+Color é para definir as cores. 
+
+Define as cores e a opacidade dos voxels que serão formados através das funções que serão chamadas após esta. 
+\begin{DoxyParams}{Parameters}
+{\em r} & vermelho \\
+\hline
+{\em g} & verde \\
+\hline
+{\em b} & azul \\
+\hline
+{\em a} & transparência \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sculptor_a58cb72d22001a5034f15383ca983830c}\label{class_sculptor_a58cb72d22001a5034f15383ca983830c} 
+\index{Sculptor@{Sculptor}!writeOFF@{writeOFF}}
+\index{writeOFF@{writeOFF}!Sculptor@{Sculptor}}
+\doxysubsubsection{\texorpdfstring{writeOFF()}{writeOFF()}}
+{\footnotesize\ttfamily void Sculptor\+::write\+OFF (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+Essa função serve para criar o arquivo em formato OFF com toda a estrutura necessária para ser lido por um sofware online ou programa, para gerar a escultura 3D. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sculptor.\+h\item 
+sculptor.\+cpp\end{DoxyCompactItemize}

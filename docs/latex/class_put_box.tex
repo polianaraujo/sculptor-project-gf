@@ -1,0 +1,75 @@
+\doxysection{Put\+Box Class Reference}
+\hypertarget{class_put_box}{}\label{class_put_box}\index{PutBox@{PutBox}}
+
+
+A class \doxylink{class_put_voxel}{Put\+Voxel} é uma classe de Figura\+Geometrica.  
+
+
+
+
+{\ttfamily \#include $<$put\+Box.\+h$>$}
+
+Inheritance diagram for Put\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_put_box}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_put_box_ae7517f4a2e376211c93b3da5514142d1}{Put\+Box}} (int x0b, int x1b, int y0b, int y1b, int z0b, int z1b, float r, float g, float b, float a)
+\item 
+void \mbox{\hyperlink{class_put_box_a58946137f1741c2c9b7a5bbcc229f5d8}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_geom_fig_aa7f09bff0d514a2f3befa9be387de4e6}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_geom_fig}{Geom\+Fig}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries r}
+\item 
+float {\bfseries g}
+\item 
+float {\bfseries b}
+\item 
+float {\bfseries a}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class \doxylink{class_put_voxel}{Put\+Voxel} é uma classe de Figura\+Geometrica. 
+
+ou seja, é herdeira de Figura\+Geometrica. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_put_box_ae7517f4a2e376211c93b3da5514142d1}\label{class_put_box_ae7517f4a2e376211c93b3da5514142d1} 
+\index{PutBox@{PutBox}!PutBox@{PutBox}}
+\index{PutBox@{PutBox}!PutBox@{PutBox}}
+\doxysubsubsection{\texorpdfstring{PutBox()}{PutBox()}}
+{\footnotesize\ttfamily Put\+Box\+::\+Put\+Box (\begin{DoxyParamCaption}\item[{int}]{x0b,  }\item[{int}]{x1b,  }\item[{int}]{y0b,  }\item[{int}]{y1b,  }\item[{int}]{z0b,  }\item[{int}]{z1b,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+função para colocar uma caixa.
+
+Variáveis para a profundidade xv (coordenada x) (xv = x do voxel), altura yv (coordenada y), largura zv (coordenada z), r para o tom de vermelho, g para o tom de verde, b para o tom de azul e a para a transparência alpha. As cores misturadas podem formar outras cores. Cada variável r, g, b e a podem ir de 0.\+0 a 1.\+0 ou de 0 a 255. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_put_box_a58946137f1741c2c9b7a5bbcc229f5d8}\label{class_put_box_a58946137f1741c2c9b7a5bbcc229f5d8} 
+\index{PutBox@{PutBox}!draw@{draw}}
+\index{draw@{draw}!PutBox@{PutBox}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Box\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sculptor}{Sculptor}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_geom_fig}{Geom\+Fig}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+put\+Box.\+h\item 
+put\+Box.\+cpp\end{DoxyCompactItemize}

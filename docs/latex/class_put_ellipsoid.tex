@@ -1,0 +1,75 @@
+\doxysection{Put\+Ellipsoid Class Reference}
+\hypertarget{class_put_ellipsoid}{}\label{class_put_ellipsoid}\index{PutEllipsoid@{PutEllipsoid}}
+
+
+A class \doxylink{class_put_ellipsoid}{Put\+Ellipsoid} é uma classe de Figura\+Geometrica.  
+
+
+
+
+{\ttfamily \#include $<$put\+Ellipsoid.\+h$>$}
+
+Inheritance diagram for Put\+Ellipsoid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_put_ellipsoid}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_put_ellipsoid_a17339f6af52b620925536c7b3f72d66c}{Put\+Ellipsoid}} (int xe, int ye, int ze, int raiox, int raioy, int raioz, float r, float g, float b, float a)
+\item 
+void \mbox{\hyperlink{class_put_ellipsoid_a7563e424e3b7560c00c7cc2a3fc16425}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_geom_fig_aa7f09bff0d514a2f3befa9be387de4e6}{draw}} (\mbox{\hyperlink{class_sculptor}{Sculptor}} \&s)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_geom_fig}{Geom\+Fig}}}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries r}
+\item 
+float {\bfseries g}
+\item 
+float {\bfseries b}
+\item 
+float {\bfseries a}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class \doxylink{class_put_ellipsoid}{Put\+Ellipsoid} é uma classe de Figura\+Geometrica. 
+
+ou seja, é herdeira de Figura\+Geometrica. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_put_ellipsoid_a17339f6af52b620925536c7b3f72d66c}\label{class_put_ellipsoid_a17339f6af52b620925536c7b3f72d66c} 
+\index{PutEllipsoid@{PutEllipsoid}!PutEllipsoid@{PutEllipsoid}}
+\index{PutEllipsoid@{PutEllipsoid}!PutEllipsoid@{PutEllipsoid}}
+\doxysubsubsection{\texorpdfstring{PutEllipsoid()}{PutEllipsoid()}}
+{\footnotesize\ttfamily Put\+Ellipsoid\+::\+Put\+Ellipsoid (\begin{DoxyParamCaption}\item[{int}]{xe,  }\item[{int}]{ye,  }\item[{int}]{ze,  }\item[{int}]{raiox,  }\item[{int}]{raioy,  }\item[{int}]{raioz,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a }\end{DoxyParamCaption})}
+
+função para colocar um elipsóide.
+
+Variáveis para o centro em x (xs) (xs = x do elipsóide), centro em y (ys), centro em z (zs), raio de x, raio de y, raio de z, r para o tom de vermelho, g para o tom de verde, b para o tom de azul e a para a transparência alpha. As cores misturadas podem formar outras cores. Cada variável r, g, b e a podem ir de 0.\+0 a 1.\+0 ou de 0 a 255. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_put_ellipsoid_a7563e424e3b7560c00c7cc2a3fc16425}\label{class_put_ellipsoid_a7563e424e3b7560c00c7cc2a3fc16425} 
+\index{PutEllipsoid@{PutEllipsoid}!draw@{draw}}
+\index{draw@{draw}!PutEllipsoid@{PutEllipsoid}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Ellipsoid\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sculptor}{Sculptor}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_geom_fig}{Geom\+Fig}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+put\+Ellipsoid.\+h\item 
+put\+Ellipsoid.\+cpp\end{DoxyCompactItemize}

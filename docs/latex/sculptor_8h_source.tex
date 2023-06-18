@@ -1,0 +1,67 @@
+\doxysection{sculptor.\+h}
+\hypertarget{sculptor_8h_source}{}\label{sculptor_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <fstream>}\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}voxel.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00005\ \textcolor{comment}{O\ doxygen\ vai\ ler\ as\ diretivas\ que\ vc\ colocar\ antes\ das\ funções\ no\ HEADER\ (arquivos\ .h)\ de\ cada\ classe}}
+\DoxyCodeLine{00006\ \textcolor{comment}{}}
+\DoxyCodeLine{00007\ \textcolor{comment}{@brief\ é\ o\ resumo\ da\ função\ }}
+\DoxyCodeLine{00008\ \textcolor{comment}{}}
+\DoxyCodeLine{00009\ \textcolor{comment}{@details\ é\ a\ explicação\ da\ função\ }}
+\DoxyCodeLine{00010\ \textcolor{comment}{}}
+\DoxyCodeLine{00011\ \textcolor{comment}{@param\ é\ a\ explicação\ do\ parâmetro\ de\ uma\ função}}
+\DoxyCodeLine{00012\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#ifndef\ SCULPTOR\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ SCULPTOR\_H}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_sculptor}{Sculptor}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{struct_voxel}{Voxel}}\ ***v;\ \textcolor{comment}{//\ Ponteiro\ triplo\ para\ matriz\ 3D}}
+\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{int}\ nx,\ ny,\ nz;\ \textcolor{comment}{//\ Dimensões\ de\ v}}
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{float}\ r,\ g,\ b,\ a;\ \textcolor{comment}{//\ Cor\ do\ desenho}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00039\ \ \ \mbox{\hyperlink{class_sculptor}{Sculptor}}(\textcolor{keywordtype}{int}\ \_nx,\ \textcolor{keywordtype}{int}\ \_ny,\ \textcolor{keywordtype}{int}\ \_nz);}
+\DoxyCodeLine{00040\ \ \ \textcolor{comment}{//\ Construtor\ da\ classe}}
+\DoxyCodeLine{00041\ \ \ }
+\DoxyCodeLine{00047\ \ \ \mbox{\hyperlink{class_sculptor_a8f159bf97458326f16d2e238e11be7ff}{\string~Sculptor}}();}
+\DoxyCodeLine{00048\ \ \ \textcolor{comment}{//\ Destrutor\ da\ classe}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_a4351c930a07887e96d4fdbf251a7867e}{setColor}}(\textcolor{keywordtype}{float}\ r,\ \textcolor{keywordtype}{float}\ g,\ \textcolor{keywordtype}{float}\ b,\ \textcolor{keywordtype}{float}\ a);}
+\DoxyCodeLine{00060\ \ \ \textcolor{comment}{/*\ Define\ a\ cor\ atual\ do\ desenho\ }}
+\DoxyCodeLine{00061\ \textcolor{comment}{\ \ r\ (vermelho),\ g\ (verde),\ b(azul),\ a\ (transparência)}}
+\DoxyCodeLine{00062\ \textcolor{comment}{\ \ todos\ indo\ de\ 0\ a\ 1*/}}
+\DoxyCodeLine{00063\ \ \ }
+\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_a4bdea3048b419d58e93074060eaa7b52}{putVoxel}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ z);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00080\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_ad9d714a35fc8ae16d06eb5df37c3493c}{cutVoxel}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ z);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00089\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_a311ad7a0fb83fc67ac1f378be8e99fe1}{putBox}}(\textcolor{keywordtype}{int}\ x0,\ \textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ y0,\ \textcolor{keywordtype}{int}\ y1,\ \textcolor{keywordtype}{int}\ z0,\ \textcolor{keywordtype}{int}\ z1);}
+\DoxyCodeLine{00090\ \ \ }
+\DoxyCodeLine{00098\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_aa84a1b12b09e9e103fc8d78f8d1bc00f}{cutBox}}(\textcolor{keywordtype}{int}\ x0,\ \textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ y0,\ \textcolor{keywordtype}{int}\ y1,\ \textcolor{keywordtype}{int}\ z0,\ \textcolor{keywordtype}{int}\ z1);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00107\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_a794a2b6ee8fc8098fd6150cb46101fc6}{putSphere}}(\textcolor{keywordtype}{int}\ xcenter,\ \textcolor{keywordtype}{int}\ ycenter,\ \textcolor{keywordtype}{int}\ zcenter,\ \textcolor{keywordtype}{int}\ radius);}
+\DoxyCodeLine{00108\ \ \ \textcolor{comment}{//\ Ativa\ todos\ os\ voxel\ que\ satisfazem\ à\ equação\ da\ esfera}}
+\DoxyCodeLine{00109\ \ \ \textcolor{comment}{//\ e\ atribui\ aos\ mesmos\ a\ cor\ atual\ de\ desenho\ (r,g,b,a)}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00118\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_a67ab8c0ba5116adb8af1d01ad373ac15}{cutSphere}}(\textcolor{keywordtype}{int}\ xcenter,\ \textcolor{keywordtype}{int}\ ycenter,\ \textcolor{keywordtype}{int}\ zcenter,\ \textcolor{keywordtype}{int}\ radius);}
+\DoxyCodeLine{00119\ \ \ \textcolor{comment}{//\ Desativa\ todos\ os\ voxels\ que\ satisfazem\ à\ equação\ da\ esfera}}
+\DoxyCodeLine{00120\ \ }
+\DoxyCodeLine{00131\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_a093615b0c2b9b3a17a56300b9b939f39}{putEllipsoid}}(\textcolor{keywordtype}{int}\ xcenter,\ \textcolor{keywordtype}{int}\ ycenter,\ \textcolor{keywordtype}{int}\ zcenter,\ \textcolor{keywordtype}{int}\ rx,\ \textcolor{keywordtype}{int}\ ry,\ \textcolor{keywordtype}{int}\ rz);}
+\DoxyCodeLine{00132\ \ \ \textcolor{comment}{//\ Ativa\ todos\ os\ voxels\ que\ satisfazem\ à\ equação\ do\ elipsóide}}
+\DoxyCodeLine{00133\ \ \ \textcolor{comment}{//\ e\ atribui\ aos\ mesmos\ a\ cor\ atual\ de\ desenho}}
+\DoxyCodeLine{00134\ \ }
+\DoxyCodeLine{00145\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_a18d2922c111c4c13653ee07d878151ad}{cutEllipsoid}}(\textcolor{keywordtype}{int}\ xcenter,\ \textcolor{keywordtype}{int}\ ycenter,\ \textcolor{keywordtype}{int}\ zcenter,\ \textcolor{keywordtype}{int}\ rx,\ \textcolor{keywordtype}{int}\ ry,\ \textcolor{keywordtype}{int}\ rz);}
+\DoxyCodeLine{00146\ \ \ \textcolor{comment}{//\ Desativa\ todos\ os\ voxels\ que\ satisfazem\ à\ equação\ do\ elipsóide}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00152\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_sculptor_a58cb72d22001a5034f15383ca983830c}{writeOFF}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ filename);}
+\DoxyCodeLine{00153\ \ \ \textcolor{comment}{/*\ Grava\ a\ escultura\ no\ formato\ OFF\ no\ arquivo\ 'filename'\ */}}
+\DoxyCodeLine{00154\ \};}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
