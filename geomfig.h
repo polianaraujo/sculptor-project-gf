@@ -8,9 +8,10 @@ class GeomFig
 protected:
     float r, g, b, a;
 public:
-    virtual ~GeomFig();
-    virtual void draw(Sculptor &s)=0;
+    GeomFig(){};
+    virtual ~GeomFig(){};
+    virtual void draw(Sculptor &s)=0; //metodo virtual puro (=0)
 
 };
 
-#endif
+#endif // GEOMFIG_H

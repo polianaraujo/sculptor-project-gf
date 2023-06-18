@@ -23,4 +23,4 @@ public:
     void draw(Sculptor &s);
 };
 
-#endif
+#endif // PUTSPHERE_H

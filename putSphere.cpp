@@ -1,4 +1,5 @@
 #include "putSphere.h"
+#include <iostream>
 
 PutSphere::PutSphere(int xs, int ys, int zs, int raio, int r, int g, int b, int a)
 {

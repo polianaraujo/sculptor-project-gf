@@ -1,4 +1,5 @@
 #include "putVoxel.h"
+#include <iostream>
 
 PutVoxel::PutVoxel(int xv, int yv, int zv, float r, float g, float b, float a)
 {
