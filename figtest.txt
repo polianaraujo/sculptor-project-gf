@@ -1,2 +1,6 @@
-dim 20 20 20
-putBox 5 15 5 15 5 15 0 0 1.0 1.0
+dim 30 30 30
+putVoxel 1 10 1  1.0 0 0 1.0
+putBox 0 4 0 4 0 4 0 1.0 0 1.0
+cutBox 1 3 1 3 1 4
+putSphere 15 5 8 4 0 1.0 0 1.0
+putEllipsoid 15 15 7 7 4 4 1.0 0 1.0 1.0
