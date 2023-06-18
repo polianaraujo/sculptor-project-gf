@@ -1,7 +1,7 @@
 #include "putSphere.h"
 #include <iostream>
 
-PutSphere::PutSphere(int xs, int ys, int zs, int raio, int r, int g, int b, int a)
+PutSphere::PutSphere(int xs, int ys, int zs, int raio, float r, float g, float b, float a)
 {
     this -> xcenter=xs;
     this -> ycenter=ys;
