@@ -1,6 +1,6 @@
 #include "cutSphere.h"
 
-CutSphere::CutSphere(int xs, int ys, int zs, int raio, int r, int g, int b, int a)
+CutSphere::CutSphere(int xs, int ys, int zs, int raio)
 {
     this -> xcenter=xs;
     this -> ycenter=ys;
@@ -14,6 +14,5 @@ CutSphere::CutSphere(int xs, int ys, int zs, int raio, int r, int g, int b, int 
 
 void CutSphere::draw(Sculptor &s)
 {
-    s.setColor(r, g, b, a);
     s.cutSphere(xcenter, ycenter, zcenter, radius);
 }

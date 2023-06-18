@@ -1,6 +1,6 @@
 #include "cutEllipsoid.h"
 
-CutEllipsoid::CutEllipsoid(int xe, int ye, int ze, int raiox, int raioy, int raioz, float r, float g, float b, float a)
+CutEllipsoid::CutEllipsoid(int xe, int ye, int ze, int raiox, int raioy, int raioz)
 {
     this -> xcenter=xe;
     this -> ycenter=ye;
@@ -16,6 +16,5 @@ CutEllipsoid::CutEllipsoid(int xe, int ye, int ze, int raiox, int raioy, int rai
 
 void CutEllipsoid::draw(Sculptor &s)
 {
-    s.setColor(r, g, b, a);
     s.cutEllipsoid(xcenter, ycenter, zcenter, rx, ry, rz);
 }

@@ -1,6 +1,8 @@
 #ifndef GEOMFIG_H
 #define GEOMFIG_H
 #include "sculptor.h"
+#include <iostream>
+#include <fstream>
 
 class GeomFig
 {

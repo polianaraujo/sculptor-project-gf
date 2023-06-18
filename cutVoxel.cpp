@@ -1,6 +1,6 @@
 #include "cutVoxel.h"
 
-CutVoxel::CutVoxel(int xv, int yv, int zv, float r, float g, float b, float a)
+CutVoxel::CutVoxel(int xv, int yv, int zv)
 {
     this->x=xv;
     this->y=yv;
@@ -13,6 +13,5 @@ CutVoxel::CutVoxel(int xv, int yv, int zv, float r, float g, float b, float a)
 
 void CutVoxel::draw(Sculptor &s)
 {
-    s.setColor(r, g, b, a);
     s.putVoxel(x, y, z);
 }

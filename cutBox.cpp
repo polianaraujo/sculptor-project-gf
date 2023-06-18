@@ -1,6 +1,6 @@
 #include "cutBox.h"
 
-CutBox::CutBox(int x0b, int x1b, int y0b, int y1b, int z0b, int z1b, float r, float g, float b, float a)
+CutBox::CutBox(int x0b, int x1b, int y0b, int y1b, int z0b, int z1b)
 {
     this->x0=x0b;
     this->x1=x1b;
@@ -16,6 +16,5 @@ CutBox::CutBox(int x0b, int x1b, int y0b, int y1b, int z0b, int z1b, float r, fl
 
 void CutBox::draw(Sculptor &s)
 {
-    s.setColor(r, g, b, a);
     s.cutBox(x0, x1, y0, y1, z0, z1);
 }
